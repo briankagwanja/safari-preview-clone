@@ -1,0 +1,33 @@
+.content {
+    display: grid;
+    grid-template-columns: 18rem repeat(2, 1fr) 18rem;
+    
+    &__row1 {
+        grid-column: 2 / span 1;
+
+    }
+
+    &__row2 {
+        grid-column: 3 / span 1;
+    }
+
+    &__paragraph {
+        font-size: 1.7rem;
+        padding-bottom: 1.5rem;
+        line-height: 2.5rem;
+        color: $grey-dark-1;
+
+        &--1 {
+            margin-left: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-primary;
+
+        &:hover {
+            border-bottom: 1px solid $color-primary;
+        }
+    }
+}
